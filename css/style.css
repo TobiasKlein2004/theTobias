@@ -1,7 +1,11 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 header{
     text-align: center;
     background-image: 
-    linear-gradient(to bottom right, #E80C7F, #1784E8); 
+        linear-gradient(to bottom right, #EB006F, #022AEB); 
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: yellow;
@@ -28,9 +32,41 @@ header{
     border-radius: 5px;
     background-color: #000;
     margin: 0rem .5rem;
+    margin-top: 1rem;
 }
 
 .nav_buttons:hover{
     background-color: #2b2b2b;
     border-color: #2b2b2b;
+}
+
+.section{
+    width: 60%;
+    margin-top: 2rem;
+    margin-left: 20%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: transparent;
+    text-align: center;
+    user-select: none;
+    border-radius: 10px;
+    transition: margin-left 1s;
+}
+
+.section:hover{
+    background-color: rgba(0, 0, 0, .3);
+}
+
+#Balli_Logo{
+    width: 18rem;
+    height: auto;
+}
+
+#Balli_des{
+    width: 65%;
+    display: inline-block;
+    text-align: left;
+    font-size: 1.65rem;
+    margin-left: 1rem;
+    background-color: transparent;
 }
