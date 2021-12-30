@@ -1,17 +1,32 @@
-body{
+body {
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 }
 
-header{
+header {
     text-align: center;
-    background-image: 
-        linear-gradient(to bottom right, #EB006F, #022AEB); 
+    background-image: linear-gradient(to bottom right, #EB006F, #022AEB);
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: yellow;
 }
 
-#heading{
+main {
+    color: #fff;
+    background-image: url("bg_pattern.png");
+    background-repeat: repeat;
+    background-size: 150px, 150px;
+    background-color: rgba(0, 0, 0, .7);
+    /* Different BG Design */
+    /*background-color: #ffffff;
+    opacity: 0.8;
+    background-image: linear-gradient(135deg, #444cf7 25%, transparent 25%), linear-gradient(225deg, #444cf7 25%, transparent 25%), linear-gradient(45deg, #444cf7 25%, transparent 25%), linear-gradient(315deg, #444cf7 25%, #ffffff 25%);
+    background-position: 26px 0, 26px 0, 0 0, 0 0;
+    background-size: 52px 52px;
+    background-repeat: repeat;*/
+}
+
+#heading {
     font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
     font-weight: bold;
@@ -20,12 +35,17 @@ header{
     user-select: none;
 }
 
-.nav_buttons_line{
+#nav_indi {
+    font-size: 1.5rem;
+    color: yellow;
+}
+
+.nav_buttons_line {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
 }
 
-.nav_buttons{
+.nav_buttons {
     color: yellow;
     border-style: solid;
     border-color: #000;
@@ -35,12 +55,19 @@ header{
     margin-top: 1rem;
 }
 
-.nav_buttons:hover{
+.nav_buttons:hover {
     background-color: #2b2b2b;
     border-color: #2b2b2b;
 }
 
-.section{
+#content {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    transition: margin-left 1s;
+}
+
+.section {
     width: 60%;
     margin-top: 2rem;
     margin-left: 20%;
@@ -53,20 +80,54 @@ header{
     transition: margin-left 1s;
 }
 
-.section:hover{
-    background-color: rgba(0, 0, 0, .3);
+#balli_sec:hover {
+    background-color: rgba(255, 255, 0, .5);
 }
 
-#Balli_Logo{
+#Balli_Logo {
     width: 18rem;
     height: auto;
 }
 
-#Balli_des{
+#Balli_des {
     width: 65%;
     display: inline-block;
     text-align: left;
     font-size: 1.65rem;
     margin-left: 1rem;
     background-color: transparent;
+}
+
+#img_col {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 3rem;
+}
+
+.images {
+    width: 100%;
+    height: auto;
+    border: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    display: inline;
+}
+
+#img2 {
+    display: none;
+}
+
+.img_but {
+    color: #fff;
+    background-color: #000;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    width: 40px;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+#img_but1 {
+    margin-left: 50%;
 }
