@@ -3,18 +3,15 @@ body {
 }
 
 body::-webkit-scrollbar {
-    background-color: black;
-    width: 16px;
-}
-
-body::-webkit-scrollbar-thumb {
-    background: linear-gradient(#E80070, #0629e8);
-    border-radius: 20px;
+    width: 0;
 }
 
 header {
     text-align: center;
-    background-image: linear-gradient(to bottom right, #EB006F, #022AEB);
+    /*background-image: linear-gradient(to bottom right, #EB006F, #022AEB);*/
+    /*background-image: linear-gradient(to bottom right, #000428, #004e92);*/
+    background-image: linear-gradient(to right, #4568dc, #b06ab3);
+    /*background-image: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);*/
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: yellow;
@@ -22,12 +19,13 @@ header {
 
 main {
     width: 100%;
-    height: 1080px;
+    height: fit-content;
     color: #fff;
     background-image: url("bg_pattern.png");
     background-repeat: repeat;
     background-size: 150px, 150px;
     background-color: rgba(0, 0, 0, .7);
+    text-align: center;
     /* Different BG Design */
     /*background-color: #ffffff;
     opacity: 0.8;
@@ -42,13 +40,15 @@ main {
     font-size: 4rem;
     font-weight: bold;
     padding-top: 1rem;
-    padding-bottom: 1rem;
     user-select: none;
 }
 
-#nav_indi {
-    font-size: 1.5rem;
-    color: yellow;
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: #000;
+    border-radius: 50%;
+    display: inline-block;
 }
 
 .nav_buttons_line {
@@ -71,11 +71,10 @@ main {
     border-color: #2b2b2b;
 }
 
-#content {
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-    transition: margin-left 1s;
+#indi {
+    padding-top: 1rem;
+    margin-left: 1rem;
+    text-decoration: underline;
 }
 
 .section {
@@ -117,7 +116,7 @@ main {
 
 .images {
     width: 100%;
-    height: auto;
+    height: 500px;
     border: 5px;
     border-style: solid;
     border-radius: 10px;
@@ -139,6 +138,39 @@ main {
     font-size: 1.5rem;
 }
 
-#img_but1 {
-    margin-left: 50%;
+#ytv {
+    margin-top: 1rem;
+    border: 5px;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 10px;
+}
+
+#lil_content {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    padding-left: 0px;
+}
+
+.item {
+    flex-basis: 200px;
+}
+
+#logo:hover {
+    width: 200;
+}
+
+.h2 {
+    text-decoration: underline;
+    background-color: yellow;
+    max-width: fit-content;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
 }
