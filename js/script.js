@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'about.html';
     };
     document.querySelector('#balli_sec').onclick = function() {
-        balli_sec.style.backgroundColor = 'rgba(255, 255, 0, .5)';
+        balli_sec.style.backgroundColor = '#f9e39b';
         balli_sec.style.marginLeft = '-80%';
         setTimeout(() => {
             window.location.href = 'balli.html';
