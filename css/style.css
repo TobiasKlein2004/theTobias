@@ -2,8 +2,26 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-body::-webkit-scrollbar {
-    width: 0;
+::-webkit-scrollbar {
+    width: 1.5em;
+    height: 1.5em;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(227, 100%, 23%);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, #af6ab3, #f3ca40);
+    border: .25em solid hsl(227, 100%, 23%);
+    border-radius: 100vW;
+}
+
+@supports (scrollbar-color: blue pink) {
+    * {
+        scrollbar-color: linear-gradient(to top, #af6ab3, #f3ca40) hsl(227, 100%, 23%);
+    }
 }
 
 header {
@@ -227,12 +245,40 @@ main {
 }
 
 
-/* CONTACT CSS */
+/* CONTACT FORM */
 
-.contact {
+form {
+    background-image: linear-gradient(45deg, #ec008c, #fc6767);
+    display: flex;
+    flex-direction: column;
     width: 40%;
     margin-left: 30%;
-    text-align: left;
-    background-image: linear-gradient(45deg, #ec008c, #fc6767);
+    padding: 2rem;
     border-radius: 30px;
+}
+
+form h3 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+form input,
+form textarea {
+    border: 0;
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 10px;
+    outline: none;
+}
+
+form button {
+    width: 20%;
+    height: 50px;
+    border: 0;
+    border-radius: 100vw;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #f3ca40;
+    cursor: pointer;
 }
