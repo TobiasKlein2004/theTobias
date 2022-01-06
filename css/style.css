@@ -316,6 +316,7 @@ form button {
     color: black;
     padding: 1rem;
     margin-left: 5%;
+    margin-top: 1.5rem;
     border-radius: 20px;
     background-size: 300%;
     background-position: left;
@@ -475,6 +476,204 @@ form button {
         text-shadow: -.05em 0 0 rgba(255, 0, 0, .8), .025em .05em 0 rgba(0, 255, 0, .8), -.05em -.07em 0 rgba(0, 0, 255, .8);
     }
 }
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+
+/* 3D text animation */
+
+.text_animation {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1.5rem;
+    padding: 2rem 1rem;
+    border-radius: 20px;
+    background: #000;
+    color: white;
+    min-height: 30vh;
+    display: grid;
+    place-items: center;
+    perspective: 500px;
+    perspective-origin: 50% calc(50% - 120px);
+}
+
+.banner {
+    display: flex;
+    transform-style: preserve-3d;
+    animation: rotate 30s infinite linear;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
+.panel {
+    position: absolute;
+    transform: translate(-50%, -50%) rotateY(var(--angle)) translateZ(151px);
+    width: 40px;
+    height: 100px;
+    /*background-color: #fff4;*/
+    overflow: hidden;
+}
+
+.panel::before {
+    position: absolute;
+    left: var(--left);
+    content: 'Tobias Klein | Todadasch';
+    font-size: 76px;
+    width: max-content;
+    color: hsl(var(--hue), 75%, 75%);
+}
+
+.panel:nth-child(1) {
+    --left: 0px;
+    --hue: 0;
+    --angle: 0deg;
+}
+
+.panel:nth-child(2) {
+    --left: -40px;
+    --hue: 15;
+    --angle: 15deg;
+}
+
+.panel:nth-child(3) {
+    --left: -80px;
+    --hue: 30;
+    --angle: 30deg;
+}
+
+.panel:nth-child(4) {
+    --left: -120px;
+    --hue: 45;
+    --angle: 45deg;
+}
+
+.panel:nth-child(5) {
+    --left: -160px;
+    --hue: 60;
+    --angle: 60deg;
+}
+
+.panel:nth-child(6) {
+    --left: -200px;
+    --hue: 75;
+    --angle: 75deg;
+}
+
+.panel:nth-child(7) {
+    --left: -240px;
+    --hue: 90;
+    --angle: 90deg;
+}
+
+.panel:nth-child(8) {
+    --left: -280px;
+    --hue: 105;
+    --angle: 105deg;
+}
+
+.panel:nth-child(9) {
+    --left: -320px;
+    --hue: 120;
+    --angle: 120deg;
+}
+
+.panel:nth-child(10) {
+    --left: -360px;
+    --hue: 135;
+    --angle: 135deg;
+}
+
+.panel:nth-child(11) {
+    --left: -400px;
+    --hue: 150;
+    --angle: 150deg;
+}
+
+.panel:nth-child(12) {
+    --left: -440px;
+    --hue: 165;
+    --angle: 165deg;
+}
+
+.panel:nth-child(13) {
+    --left: -480px;
+    --hue: 180;
+    --angle: 180deg;
+}
+
+.panel:nth-child(14) {
+    --left: -520px;
+    --hue: 195;
+    --angle: 195deg;
+}
+
+.panel:nth-child(15) {
+    --left: -560px;
+    --hue: 210;
+    --angle: 210deg;
+}
+
+.panel:nth-child(16) {
+    --left: -600px;
+    --hue: 225;
+    --angle: 225deg;
+}
+
+.panel:nth-child(17) {
+    --left: -640px;
+    --hue: 240;
+    --angle: 240deg;
+}
+
+.panel:nth-child(18) {
+    --left: -680px;
+    --hue: 255;
+    --angle: 255deg;
+}
+
+.panel:nth-child(19) {
+    --left: -720px;
+    --hue: 270;
+    --angle: 270deg;
+}
+
+.panel:nth-child(20) {
+    --left: -760px;
+    --hue: 285;
+    --angle: 285deg;
+}
+
+.panel:nth-child(21) {
+    --left: -800px;
+    --hue: 300;
+    --angle: 300deg;
+}
+
+.panel:nth-child(22) {
+    --left: -840px;
+    --hue: 315;
+    --angle: 315deg;
+}
+
+.panel:nth-child(23) {
+    --left: -880px;
+    --hue: 330;
+    --angle: 330deg;
+}
+
+.panel:nth-child(24) {
+    --left: -920px;
+    --hue: 345;
+    --angle: 345deg;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 
 @media (prefers-reduced-motion: reduce) {
     *,
