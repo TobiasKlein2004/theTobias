@@ -93,6 +93,39 @@
             </div>
         </div>
         <!-- Alert Demonstration -->
+        <div class="alert_demo">
+            <h1 style="font-weight: 700; margin-bottom: 2rem;">Alert Demo</h1>
+            <div id="primary" class="alert alert-primary" role="alert">
+                A simple primary alert
+            </div>
+            <div id="secondary" class="alert alert-secondary" role="alert">
+                A simple secondary alert
+            </div>
+            <div id="success" class="alert alert-success" role="alert">
+                A simple success alert
+            </div>
+            <div id="danger" class="alert alert-danger" role="alert">
+                A simple danger alert
+            </div>
+            <div id="warning" class="alert alert-warning" role="alert">
+                A simple warning alert
+            </div>
+            <div id="info" class="alert alert-info" role="alert">
+                A simple info alert
+            </div>
+            <div id="dark" class="alert alert-dark" role="alert">
+                A simple dark alert
+            </div>
+            <div class="alert_buttons">
+                <button id="primary_but" style="background-color: rgb(204, 229, 255); border: 0; border-radius: 5px; font-size: 1.1rem; margin: .7rem; margin-top: 2rem;">Primary</button>
+                <button id="secondary_but" style="background-color: rgb(226, 227, 229); border: 0; border-radius: 5px; font-size: 1.1rem; margin: .7rem; margin-top: 2rem;">Secondary</button>
+                <button id="success_but" style="background-color: rgb(212, 237, 218); border: 0; border-radius: 5px; font-size: 1.1rem; margin: .7rem; margin-top: 2rem;">Success</button>
+                <button id="danger_but" style="background-color: rgb(248, 215, 218); border: 0; border-radius: 5px; font-size: 1.1rem; margin: .7rem; margin-top: 2rem;">Danger</button>
+                <button id="warning_but" style="background-color: rgb(255, 243, 205); border: 0; border-radius: 5px; font-size: 1.1rem; margin: .7rem; margin-top: 2rem;">Warning</button>
+                <button id="info_but" style="background-color: rgb(209, 236, 241); border: 0; border-radius: 5px; font-size: 1.1rem; margin: .7rem; margin-top: 2rem;">Info</button>
+                <button id="dark_but" style="background-color: rgb(214, 216, 217); border: 0; border-radius: 5px; font-size: 1.1rem; margin: .7rem; margin-top: 2rem;">Dark</button>
+            </div>
+        </div>
         <!-- Git Section -->
         <div>
             <div id="git_section" type="Button">
@@ -104,6 +137,92 @@
             </div>
         </div>
     </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let primary = document.getElementById('primary');
+            let secondary = document.getElementById('secondary');
+            let success = document.getElementById('success');
+            let danger = document.getElementById('danger');
+            let warning = document.getElementById('warning');
+            let info = document.getElementById('info');
+            let dark = document.getElementById('dark');
+
+            primary.style.display = 'unset';
+            secondary.style.display = 'none';
+            success.style.display = 'none';
+            danger.style.display = 'none';
+            warning.style.display = 'none';
+            info.style.display = 'none';
+            dark.style.display = 'none';
+
+            document.querySelector('#git_section').onclick = function() {
+                window.location.href = 'https://github.com/TobiasKlein2004';
+            };
+            document.querySelector('#primary_but').onclick = function() {
+                primary.style.display = 'unset';
+                secondary.style.display = 'none';
+                success.style.display = 'none';
+                danger.style.display = 'none';
+                warning.style.display = 'none';
+                info.style.display = 'none';
+                dark.style.display = 'none';
+            };
+            document.querySelector('#secondary_but').onclick = function() {
+                primary.style.display = 'none';
+                secondary.style.display = 'unset';
+                success.style.display = 'none';
+                danger.style.display = 'none';
+                warning.style.display = 'none';
+                info.style.display = 'none';
+                dark.style.display = 'none';
+            };
+            document.querySelector('#success_but').onclick = function() {
+                primary.style.display = 'none';
+                secondary.style.display = 'none';
+                success.style.display = 'unset';
+                danger.style.display = 'none';
+                warning.style.display = 'none';
+                info.style.display = 'none';
+                dark.style.display = 'none';
+            };
+            document.querySelector('#danger_but').onclick = function() {
+                primary.style.display = 'none';
+                secondary.style.display = 'none';
+                success.style.display = 'none';
+                danger.style.display = 'unset';
+                warning.style.display = 'none';
+                info.style.display = 'none';
+                dark.style.display = 'none';
+            };
+            document.querySelector('#warning_but').onclick = function() {
+                primary.style.display = 'none';
+                secondary.style.display = 'none';
+                success.style.display = 'none';
+                danger.style.display = 'none';
+                warning.style.display = 'unset';
+                info.style.display = 'none';
+                dark.style.display = 'none';
+            };
+            document.querySelector('#info_but').onclick = function() {
+                primary.style.display = 'none';
+                secondary.style.display = 'none';
+                success.style.display = 'none';
+                danger.style.display = 'none';
+                warning.style.display = 'none';
+                info.style.display = 'unset';
+                dark.style.display = 'none';
+            };
+            document.querySelector('#dark_but').onclick = function() {
+                primary.style.display = 'none';
+                secondary.style.display = 'none';
+                success.style.display = 'none';
+                danger.style.display = 'none';
+                warning.style.display = 'none';
+                info.style.display = 'none';
+                dark.style.display = 'unset';
+            };
+        });
+    </script>
 </body>
 
 </html>
