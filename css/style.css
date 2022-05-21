@@ -1,5 +1,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    background-image: url("bg_pattern.png");
+    background-color: #1d3557;
+    background-size: 150px, 150px;
 }
 
 ::-webkit-scrollbar {
@@ -39,10 +42,7 @@ main {
     width: 100%;
     max-height: fit-content;
     color: #fff;
-    background-image: url("bg_pattern.png");
     background-repeat: repeat;
-    background-size: 150px, 150px;
-    background-color: #1d3557;
     padding-bottom: 2rem;
     text-align: center;
     /* Different BG Design */
